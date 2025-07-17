@@ -56,7 +56,7 @@ def delete(id):
     flash("Record Deleted Successfully")
     return redirect(url_for('Index'))
 
-@app.route
+@app.route("/edit/<int:id>",methods=["POST","GET"])
 
 if __name__ == '__main__':
     app.run(debug=True)
