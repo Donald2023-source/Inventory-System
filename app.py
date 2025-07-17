@@ -55,8 +55,30 @@ def delete(id):
     cursor.close()
     flash("Record Deleted Successfully")
     return redirect(url_for('Index'))
+    
+@app.route('/update/<int:id>', methods=['POST'])
+def update(id):
+    name = request.form['name_of_drink']
+    price = request.form['price']
+    quantity = request.form['quantity']
+    expiry_date = request.form['expiry_date']
+    batch_number = request.form['batch_number']
+    drink_subtype = request.form['drink_subtype']
 
-@app.route("/edit/<int:id>",methods=["POST","GET"])
+    
+    cursor = mysql.connection.cursor()
+
+    
+    cursor.execute("UPDATE soft_drinks_tbl SET name_of_drink = %s, price = %s, quantity = %s, expiry_date = %s, batch_number = %s, drink_subtype = %s WHERE id = %s",
+                   (name, price, quantity, expiry_date, batch_number, drink_subtype, id))
+
+    mysql.connection.commit()
+    cursor.close()
+
+    flash("Drink updated successfully")
+    return redirect(url_for('Index'))
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
