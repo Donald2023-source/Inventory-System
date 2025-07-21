@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+  <component name="Black">
+    <option name="sdkName" value="Python 3.12 (Inventory-System)" />
+  </component>
+=======
+>>>>>>> 4e31039081cabd252444f31ba3a91a9769939dd0
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (Inventory-System)" project-jdk-type="Python SDK" />
 </project>
