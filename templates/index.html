@@ -5,150 +5,313 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drinks Inventory</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/css/styles.css" />
   </head>
   <body class="bg-[#F3EDED]">
     <!-- Aside -->
-    <div class="flex h-screen py-1 px-3">
-      <Aside class="2xl:w-[5%] w-[9%] h-full rounded-2xl bg-[#4361EE]">
+    <div class="flex h-screen relative py-1 px-3">
+      <aside class="2xl:w-[5%] w-[9%] h-full rounded-2xl bg-[#4361EE]">
         <div class="flex flex-col py-8 items-center">
-          <img class="h-10" src="/static/Logo.png" alt="">
+          <img class="h-10" src="/static/Logo.png" alt="" />
 
           <div class="flex flex-col items-center gap-4 py-9">
-            <img src="/static/Frame 1000004134.png" alt="">
-            <img class="hover:scale-105 hover:bg-white/30 cursor-pointer py-2 px-2 h-12 rounded" src="/static/Frame 1000004136.png" alt="">
-            <img class="hover:scale-105 hover:bg-white/30 cursor-pointer py-2 px-2 h-12 rounded" src="/static/Frame 1000004137.png" alt="">
-            <img class="hover:scale-105 hover:bg-white/30 cursor-pointer py-2 px-2 h-12 rounded" src="/static/Frame 1000004138.png" alt="">
-            <img class="hover:scale-105 hover:bg-white/30 cursor-pointer py-2 px-2 h-12 rounded" src="/static/Frame 1000004139.png" alt="">
-            <img class="hover:scale-105 hover:bg-white/30 cursor-pointer py-2 px-2 h-12 rounded" src="/static/Frame 1000004140.png" alt="">
+            <img src="/static/Frame 1000004134.png" alt="" />
+            <img
+              class="hover:scale-105 hover:bg-white/30 cursor-pointer py-2 px-2 h-12 rounded"
+              src="/static/Frame 1000004136.png"
+              alt=""
+            />
+            <img
+              class="hover:scale-105 hover:bg-white/30 cursor-pointer py-2 px-2 h-12 rounded"
+              src="/static/Frame 1000004137.png"
+              alt=""
+            />
+            <img
+              class="hover:scale-105 hover:bg-white/30 cursor-pointer py-2 px-2 h-12 rounded"
+              src="/static/Frame 1000004138.png"
+              alt=""
+            />
+            <img
+              class="hover:scale-105 hover:bg-white/30 cursor-pointer py-2 px-2 h-12 rounded"
+              src="/static/Frame 1000004139.png"
+              alt=""
+            />
+            <img
+              class="hover:scale-105 hover:bg-white/30 cursor-pointer py-2 px-2 h-12 rounded"
+              src="/static/Frame 1000004140.png"
+              alt=""
+            />
           </div>
         </div>
-      </Aside>
+      </aside>
 
-      <div class="flex-1 relative py-3 2xl:px-12 px-8">
-
+      <div class="flex-1 relative inset-0 py-3 2xl:px-12 px-8">
         <!-- Top Bar -->
-        <div class="flex items-center justify-between w-full ">
-            <div class="flex items-center gap-2">
-              <img src="/static/Mask group.png" alt="">
-              <div class="flex flex-col">
-                <p class="text-gray-400">Hi, Barka!</p>
-                <h4 class="font-semibold text-lg  ">Welcome Back!</h4>
-              </div>
+        <div class="flex items-center justify-between w-full">
+          <div class="flex items-center gap-2">
+            <img src="/static/Mask group.png" alt="" />
+            <div class="flex flex-col">
+              <p class="text-gray-400">Hi, Barka!</p>
+              <h4 class="font-semibold text-lg">Welcome Back!</h4>
             </div>
+          </div>
 
-            <fieldset class="bg-white p-4 rounded-full w-[30rem]">
-              <input class="outline-none px-4" type="text" placeholder="Search">
-            </fieldset>
+          <fieldset class="bg-white p-4 rounded-full w-[30rem]">
+            <input class="outline-none px-4" type="text" placeholder="Search" />
+          </fieldset>
         </div>
 
         <div class="flex items-center justify-between my-7 gap-5">
-          <div class="flex items-center gap-2 2xl:gap-5 bg-white/80 rounded-2xl 2xl:p-6 p-4 w-[25%]">
-            <img src="/static/Frame 1000004145.png" alt="">
+          <div
+            class="flex items-center gap-2 2xl:gap-5 bg-white/80 rounded-2xl 2xl:p-6 p-4 w-[25%]"
+          >
+            <img src="/static/Frame 1000004145.png" alt="" />
             <div class="flex flex-col gap-2">
-              <p class="text-gray-400  text-sm w-full 2xl:text-xl">Complete Inventories</p>
+              <p class="text-gray-400 text-sm w-full 2xl:text-xl">
+                Complete Inventories
+              </p>
               <h4 class="text-3xl font-bold">04</h4>
             </div>
           </div>
 
-         <div class="flex items-center gap-2 2xl:gap-5 bg-white/80 rounded-2xl p-4 w-[25%]">
-            <img src="/static/Frame 1000004145 (1).png" alt="">
+          <div
+            class="flex items-center gap-2 2xl:gap-5 bg-white/80 rounded-2xl p-4 w-[25%]"
+          >
+            <img src="/static/Frame 1000004145 (1).png" alt="" />
             <div class="flex flex-col gap-2">
-              <p class="text-gray-400  text-sm w-full 2xl:text-xl">Pending Inventories</p>
+              <p class="text-gray-400 text-sm w-full 2xl:text-xl">
+                Pending Inventories
+              </p>
               <h4 class="text-3xl font-bold">10</h4>
             </div>
           </div>
 
-           <div class="flex items-center gap-2 2xl:gap-5 bg-white/80 rounded-2xl p-4 w-[25%]">
-            <img src="/static/Frame 1000004145 (2).png" alt="">
+          <div
+            class="flex items-center gap-2 2xl:gap-5 bg-white/80 rounded-2xl p-4 w-[25%]"
+          >
+            <img src="/static/Frame 1000004145 (2).png" alt="" />
             <div class="flex flex-col gap-2">
-              <p class="text-gray-400  text-sm w-full 2xl:text-xl">Failed Inventories</p>
+              <p class="text-gray-400 text-sm w-full 2xl:text-xl">
+                Failed Inventories
+              </p>
               <h4 class="text-3xl font-bold">10</h4>
             </div>
           </div>
 
-          <div class="flex items-center gap-2 2xl:gap-5 bg-white/80 rounded-2xl p-4 w-[25%]">
-            <img src="/static/Frame 1000004145.png" alt="">
+          <div
+            class="flex items-center gap-2 2xl:gap-5 bg-white/80 rounded-2xl p-4 w-[25%]"
+          >
+            <img src="/static/Frame 1000004145.png" alt="" />
             <div class="flex flex-col gap-2">
-              <p class="text-gray-400  text-sm w-full 2xl:text-xl">Complete Inventories</p>
+              <p class="text-gray-400 text-sm w-full 2xl:text-xl">
+                Complete Inventories
+              </p>
               <h4 class="text-3xl font-bold">10</h4>
             </div>
           </div>
         </div>
 
+        <div class="w-full flex items-end justify-end">
+          <button
+            onclick="showBackdrop()"
+            class="bg-[#4361EE] py-3 px-10 rounded-xl text-white hover:scale-105 transition duration-200 cursor-pointer"
+          >
+            Add
+          </button>
+        </div>
 
         <div>
           <h2 class="text-2xl font-semibold py-4">Inventory Lists</h2>
-
           <div class="w-full bg-white h-full p-4 rounded">
-           <table class="w-full">
-  <thead class="w-full font-medium text-gray-500">
-    <tr>
-      <th class="py-2 w-[20%] text-left">Id</th>
-      <th class="py-2 w-[20%] text-left">Name</th>
-      <th class="py-2 w-[20%] text-left">Price</th>
-      <th class="py-2 w-[20%] text-left">Quantity</th>
-      <th class="py-2 w-[20%] text-left">Expiry Date</th>
-      <th class="py-2 w-[20%] text-center">Actions</th>
-      
-    </tr>
-    
-  </thead>
-  <tbody>
-  
-  </tbody>
-</table>
+            <table class="w-full">
+              <thead class="w-full font-medium text-gray-500">
+                <tr>
+                  <th class="py-2 w-[20%] text-left">Id</th>
+                  <th class="py-2 w-[20%] text-left">Name</th>
+                  <th class="py-2 w-[20%] text-left">Price</th>
+                  <th class="py-2 w-[20%] text-left">Quantity</th>
+                  <th class="py-2 w-[20%] text-left">Expiry Date</th>
+                  <th class="py-2 w-[20%] text-center">Actions</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
           </div>
         </div>
+      </div>
 
-        <div class="abosolute top-1/2">
-          This is my dialogue
+      <!-- Add form -->
+      <div id="backdrop" class="absolute inset-0 backdrop-blur-md">
+        <div
+          onclick="hideBackdrop()"
+          class="flex items-center relative justify-center h-full"
+        >
+          <div class="rounded-2xl bg-white shadow-xl w-[33%] py-5">
+            <h2 class="font-bold text-3xl text-center py-3">Add Item</h2>
+            <p class="text-center py-4">
+              Please enter the right informations below
+            </p>
+            <form
+              method="POST"
+              class="flex flex-col z-20 items-center gap-5 justify-center w-full px-5"
+              action="{{url_for('insert')}}"
+            >
+              <fieldset class="w-full">
+                <input
+                  class="border border-gray-300 rounded-md p-2 w-[100%]"
+                  type="text"
+                  id="name_of_drink"
+                  name="name_of_drink"
+                  placeholder="Name of Item"
+                />
+              </fieldset>
+
+              <fieldset class="flex justify-between w-full">
+                <input
+                  class="border border-gray-300 rounded-md p-2 w-[45%]"
+                  id="batch_number"
+                  name="batch_number"
+                  type="text"
+                  placeholder="Batch Number"
+                />
+                <input
+                  class="border border-gray-300 rounded-md p-2 w-[45%]"
+                  id="drink_subtype"
+                  name="drink_subtype"
+                  type="text"
+                  placeholder="Drink Subtype"
+                />
+              </fieldset>
+              <fieldset class="w-full">
+                <input
+                  class="border border-gray-300 rounded-md p-2 w-[100%] outline-none"
+                  type="text"
+                  placeholder="Brand Name"
+                />
+              </fieldset>
+              <fieldset class="flex justify-between w-full">
+                <input
+                  name="quantity"
+                  id="quantity"
+                  class="border border-gray-300 rounded-md p-2 w-[45%]"
+                  type="text"
+                  placeholder="Quantity"
+                />
+                <input
+                  name="expiry_date"
+                  id="expiry_date"
+                  class="border border-gray-300 rounded-md p-2 w-[45%]"
+                  type="date"
+                  placeholder="Expiry Date"
+                />
+              </fieldset>
+
+              <fieldset class="w-full">
+                <input
+                  name="price"
+                  id="price"
+                  class="border border-gray-300 rounded-md p-2 w-[100%] outline-none"
+                  type="number"
+                  placeholder="Price"
+                />
+              </fieldset>
+              <button
+                class="bg-[#4361EE] py-3 px-10 rounded-xl text-white hover:scale-105 transition duration-200 cursor-pointer"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- update Form -->
+      <div id="updateBackdrop" class="absolute inset-0 backdrop-blur-md">
+        <div
+          onclick="hideUpdateBackdrop()"
+          class="flex items-center relative justify-center h-full"
+        >
+          <div class="rounded-2xl bg-white shadow-xl w-[33%] py-5">
+            <h2 class="font-bold text-3xl text-center py-3">Update Item</h2>
+            <p class="text-center py-4">
+              Please enter the right informations below
+            </p>
+            <form
+              method="POST"
+              class="flex flex-col z-20 items-center gap-5 justify-center w-full px-5"
+              action="{{url_for('update', id=0)}}"
+              id="updateForm"
+            >
+              <fieldset class="w-full">
+                <input
+                  class="border border-gray-300 rounded-md p-2 w-[100%]"
+                  type="text"
+                  id="update_name_of_drink"
+                  name="name_of_drink"
+                  placeholder="Name of Item"
+                />
+              </fieldset>
+
+              <fieldset class="flex justify-between w-full">
+                <input
+                  class="border border-gray-300 rounded-md p-2 w-[45%]"
+                  id="update_batch_number"
+                  name="batch_number"
+                  type="text"
+                  placeholder="Batch Number"
+                />
+                <input
+                  class="border border-gray-300 rounded-md p-2 w-[45%]"
+                  id="update_drink_subtype"
+                  name="drink_subtype"
+                  type="text"
+                  placeholder="item Subtype"
+                />
+              </fieldset>
+
+              <fieldset class="flex justify-between w-full">
+                <input
+                  name="quantity"
+                  id="update_quantity"
+                  class="border border-gray-300 rounded-md p-2 w-[45%]"
+                  type="text"
+                  placeholder="Quantity"
+                />
+                <input
+                  name="expiry_date"
+                  id="update_expiry_date"
+                  class="border border-gray-300 rounded-md p-2 w-[45%]"
+                  type="date"
+                  placeholder="Expiry Date"
+                />
+              </fieldset>
+
+              <fieldset class="w-full">
+                <input
+                  name="price"
+                  id="update_price"
+                  class="border border-gray-300 rounded-md p-2 w-[100%] outline-none"
+                  type="number"
+                  placeholder="Price"
+                />
+              </fieldset>
+              <button
+                class="bg-[#4361EE] py-3 px-10 rounded-xl text-white hover:scale-105 transition duration-200 cursor-pointer"
+              >
+                update
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
 
-
- </script>
-    <script>
-    const fetchData = () => {
-  fetch("/details")
-    .then((res) => res.json())
-    .then((response) => {
-      console.log("Raw response:", response);
-      const data = Array.isArray(response) ? response : response.data || [];
-      console.log("Processed data:", data);
-      const tbody = document.querySelector("tbody");
-      tbody.innerHTML = "";
-      if (!Array.isArray(data)) {
-        console.error("Data is not an array:", data);
-        return;
-      }
-      
-      data.forEach((item) => {
-        const row = document.createElement("tr");
-        console.log(item)
-        row.className = "border-b mx-2 py-3 border-gray-100";
-        row.innerHTML = `
-          <td class="py-3 px-1 w-[20%] text-left">${item[0]}</td>
-          <td class="py-3 px-1 w-[20%] text-left">${item[1]}</td>
-          <td class="py-3 px-1 w+[20%] text-left">N${item[2]}</td>
-          <td class="py-3 px-1 w-[20%] text-left">${item[3]}</td>
-          <td class="py-3 px-1 w-[20%] text-left">${item.expiry_date || "N/A"}</td>
-          <td class="py-3 flex gap-4 items-center justify-between px-1 flex-1 text-left">
-           <button class="bg-green-500 py-3 px-8 text-sm text-white rounded-xl hover:scale-105 transition-all cursor-pointer">Edit</button> 
-           <button class="bg-red-700 py-3 px-8 text-sm text-white rounded-xl hover:scale-105 transition-all cursor-pointer">Delete</button>
-          </td>
-          
-        `;
-        tbody.appendChild(row);
-      });
-    })
-    .catch((error) => console.error("Error fetching data:", error));
-};
-
-document.addEventListener("DOMContentLoaded", fetchData);
-    </script>
+    <script src="../static/js/script.js"></script>
   </body>
 </html>

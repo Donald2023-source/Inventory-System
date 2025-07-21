@@ -1,0 +1,22 @@
+
+
+
+#backdrop {
+    display: none;
+}
+
+#backdrop.show {
+    display: block;
+    z-index: 10;
+}
+
+input::-webkit-inner-spin-button{
+    display: none;
+}
+
+#updateBackdrop {
+    display: none;
+}
+#updateBackdrop.show {
+    display: block;
+}
