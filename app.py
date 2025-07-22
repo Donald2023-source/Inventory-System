@@ -23,20 +23,7 @@ def Index():
     return render_template('index.html', drinks=data)
 
 
-@app.route('/insert', methods=['POST'])
-def insert():
-    if request.method == 'POST':
-        name = request.form['name_of_drink']
-        price = request.form['price']
-        quantity = request.form['quantity']
-        expiry_date = request.form['expiry_date']
-        batch_number = request.form['batch_number']
-        drink_subtype = request.form['drink_subtype']
-        
-        cursor = mysql.connection.cursor()  
-        cursor.execute("INSERT INTO soft_drinks_tbl (name_of_drink, price, quantity, expiry_date, batch_number, drink_subtype) VALUES (%s, %s, %s, %s, %s, %s)", (name, price, quantity, expiry_date, batch_number, drink_subtype))
-        mysql.connection.commit()
-        return redirect(url_for('Index'))
+
     
 
 
