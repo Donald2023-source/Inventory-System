@@ -22,7 +22,7 @@ def Index():
     print(data)
     return render_template('index.html', drinks=data)
 
- @app.route('/delete/<int:id>', methods=["POST", "DELETE"])
+@app.route('/delete/<int:id>', methods=["POST", "DELETE"])
 def delete(id):
     cursor = mysql.connection.cursor()
     cursor.execute("DELETE FROM soft_drinks_tbl WHERE id = %s", (id,))
