@@ -22,6 +22,14 @@ def Index():
     print(data)
     return render_template('index.html', drinks=data)
 
+@app.route('/fetchdata', methods=['GET'])
+def fetchItems():
+    cursor = mysql.connection.cursor()
+    cursor.execute("SELECT * FROM soft_drinks_tbl")
+    data = cursor.fetchall()
+    cursor.close()
+    return jsonify({"data":data})
+
 @app.route('/insert', methods=['POST'])
 def insert():
     if request.method == 'POST':
